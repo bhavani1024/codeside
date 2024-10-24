@@ -1,14 +1,15 @@
 
 
-import {db} from "@/db"
-const Home = async () => {
-  const users = await db.user.findMany()
+import HeroSection from "@/components/HeroSection"
+import HeroSection2 from "@/components/HeroSection2"
+const Home = () => {
+  
   return (
-    <div>
-      <pre>
-        {JSON.stringify(users, null, 2)}
-      </pre>
-    </div>
+    <>
+    
+    {/* <HeroSection/>   */}
+    <HeroSection2/>  
+    </>
   )
 }
 
